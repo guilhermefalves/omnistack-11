@@ -1,0 +1,13 @@
+@port=3333
+@baseUrl=http://localhost:{{port}}/session
+
+@ong_id=0c25bce0
+
+POST {{baseUrl}}
+Content-Type: application/json
+Accept: application/json
+Authorization: {{ong_id}}
+
+{
+    "id": "{{ong_id}}"
+}

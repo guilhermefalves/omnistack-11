@@ -1,0 +1,22 @@
+@port=3333
+@baseUrl=http://localhost:{{port}}/ongs
+
+// Cria uma ONG
+POST {{baseUrl}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "ONG 5",
+    "email": "ong@ongs.com",
+    "whatsapp": "5514965442156",
+    "city": "Bauru",
+    "uf": "SP"
+}
+
+// Busca todas as ongs
+GET {{baseUrl}}
+Content-Type: application/json
+Accept: application/json
+
+{}

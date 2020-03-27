@@ -1,0 +1,27 @@
+@port=3333
+@baseUrl=http://localhost:{{port}}/incidents
+
+@ongId=0c25bce0
+POST {{baseUrl}}
+Content-Type: application/json
+Authorization: {{ongId}}
+Accept: application/json
+
+{
+    "title": "Ração Light",
+    "description": "Doguinho precisa de ração light para emagrecer",
+    "value": 175.00
+}
+
+GET {{baseUrl}}?page=4
+Content-Type: application/json
+Accept: application/json
+
+{}
+
+DELETE {{baseUrl}}/1
+Content-Type: application/json
+Accept: application/json
+Authorization: {{ongId}}
+
+{}
