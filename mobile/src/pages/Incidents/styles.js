@@ -39,6 +39,8 @@ export default StyleSheet.create({
         borderRadius: 8,
         backgroundColor: '#FFFFFF',
         marginBottom: 16,
+        borderColor: '#CCCCCC',
+        borderWidth: 1
     },
     incidentProperty: {
         fontSize: 14,
