@@ -15,6 +15,19 @@ module.exports = {
     useNullAsDefault: true
   },
 
+  test: {
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/test.sqlite'
+    },
+    migrations: {
+      directory: './src/database/migrations',
+      tableName: 'knex_migrations'
+    },
+    // Valor padrão para null
+    useNullAsDefault: true
+  },
+
   staging: {
     client: 'postgresql',
     connection: {
